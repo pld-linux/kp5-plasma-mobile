@@ -31,7 +31,7 @@ BuildRequires:	ninja
 BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.164
 BuildRequires:	xz
-Obsoletes:	kp5-plasma-phone-components
+Obsoletes:	kp5-plasma-phone-components < 5.24.1
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		qt5dir		%{_libdir}/qt5
