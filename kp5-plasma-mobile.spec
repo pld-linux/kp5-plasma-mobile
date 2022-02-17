@@ -39,6 +39,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 UI components for Plasma Phone.
 
+%description -l pl.UTF-8
+Komponenty interfejsu użytkownika Plasma Phone.
+
 %prep
 %setup -q -n %{kpname}-%{version}
 
