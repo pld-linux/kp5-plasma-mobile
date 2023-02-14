@@ -1,19 +1,19 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeplasmaver	5.26.5
+%define		kdeplasmaver	5.27.0
 %define		qtver		5.15.2
 %define		kpname		plasma-mobile
-%define		kf5ver		5.39.0
+%define		kf5_ver		5.102.0
 
 Summary:	plasma-mobile
 Name:		kp5-%{kpname}
-Version:	5.26.5
+Version:	5.27.0
 Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
-# Source0-md5:	cb64c2c61676c499f1807184928083c7
+# Source0-md5:	609168346b33f3580fea1366db6bed29
 URL:		https://kde.org/
 BuildRequires:	Qt5Core-devel >= 5.15.0
 BuildRequires:	Qt5Gui-devel >= 5.15.0
@@ -29,6 +29,7 @@ BuildRequires:	kf5-knotifications-devel >= 5.82
 BuildRequires:	kf5-kservice-devel >= 5.82
 BuildRequires:	kf5-kwayland-devel >= 5.82
 BuildRequires:	kf5-plasma-framework-devel >= 5.82
+BuildRequires:	kirigami-addons-devel >= 0.7.0
 BuildRequires:	kp5-kwin-devel >= 5.23.0
 BuildRequires:	ninja
 BuildRequires:	pkgconfig
@@ -140,11 +141,6 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{_datadir}/plasma/quicksettings/org.kde.plasma.quicksetting.keyboardtoggle/contents/ui
 %{_datadir}/plasma/quicksettings/org.kde.plasma.quicksetting.keyboardtoggle/contents/ui/main.qml
 %{_datadir}/plasma/quicksettings/org.kde.plasma.quicksetting.keyboardtoggle/metadata.json
-%dir %{_datadir}/plasma/quicksettings/org.kde.plasma.quicksetting.location
-%dir %{_datadir}/plasma/quicksettings/org.kde.plasma.quicksetting.location/contents
-%dir %{_datadir}/plasma/quicksettings/org.kde.plasma.quicksetting.location/contents/ui
-%{_datadir}/plasma/quicksettings/org.kde.plasma.quicksetting.location/contents/ui/main.qml
-%{_datadir}/plasma/quicksettings/org.kde.plasma.quicksetting.location/metadata.json
 %dir %{_datadir}/plasma/quicksettings/org.kde.plasma.quicksetting.mobiledata
 %dir %{_datadir}/plasma/quicksettings/org.kde.plasma.quicksetting.mobiledata/contents
 %dir %{_datadir}/plasma/quicksettings/org.kde.plasma.quicksetting.mobiledata/contents/ui
@@ -199,7 +195,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/metainfo/org.kde.plasma.quicksetting.donotdisturb.appdata.xml
 %{_datadir}/metainfo/org.kde.plasma.quicksetting.flashlight.appdata.xml
 %{_datadir}/metainfo/org.kde.plasma.quicksetting.keyboardtoggle.appdata.xml
-%{_datadir}/metainfo/org.kde.plasma.quicksetting.location.appdata.xml
 %{_datadir}/metainfo/org.kde.plasma.quicksetting.mobiledata.appdata.xml
 %{_datadir}/metainfo/org.kde.plasma.quicksetting.nightcolor.appdata.xml
 %{_datadir}/metainfo/org.kde.plasma.quicksetting.powermenu.appdata.xml
@@ -222,3 +217,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/plasma/quicksettings/org.kde.plasma.quicksetting.donotdisturb/metadata.json
 %{_datadir}/plasma/quicksettings/org.kde.plasma.quicksetting.record/contents/ui/main.qml
 %{_datadir}/plasma/quicksettings/org.kde.plasma.quicksetting.record/metadata.json
+
+%{_libdir}/qt5/qml/org/kde/plasma/quicksetting/record/librecordplugin.so
+%{_libdir}/qt5/qml/org/kde/plasma/quicksetting/record/qmldir
