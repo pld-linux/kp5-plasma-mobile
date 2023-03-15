@@ -1,19 +1,19 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeplasmaver	5.27.2
+%define		kdeplasmaver	5.27.3
 %define		qtver		5.15.2
 %define		kpname		plasma-mobile
 %define		kf5_ver		5.102.0
 
 Summary:	plasma-mobile
 Name:		kp5-%{kpname}
-Version:	5.27.2
+Version:	5.27.3
 Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
-# Source0-md5:	024d275361757ba406215866c4bb759a
+# Source0-md5:	d7e7d0b3a6a4c1aaf4ab081f940a6c90
 URL:		https://kde.org/
 BuildRequires:	Qt5Core-devel >= 5.15.0
 BuildRequires:	Qt5Gui-devel >= 5.15.0
