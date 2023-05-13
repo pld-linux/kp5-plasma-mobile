@@ -9,7 +9,7 @@
 Summary:	plasma-mobile
 Name:		kp5-%{kpname}
 Version:	5.27.5
-Release:	1
+Release:	2
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
@@ -87,20 +87,25 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/plasma/plasmoids/org.kde.phone.taskpanel
 %{_datadir}/plasma/shells/org.kde.plasma.phoneshell
 %{_datadir}/wayland-sessions/plasma-mobile.desktop
+%dir %{_libdir}/qt5/qml/org/kde/plasma/mm
 %{_libdir}/qt5/qml/org/kde/plasma/mm/libppc-mmqmlplugin.so
 %{_libdir}/qt5/qml/org/kde/plasma/mm/qmldir
+%dir %{_libdir}/qt5/qml/org/kde/plasma/quicksetting
+%dir %{_libdir}/qt5/qml/org/kde/plasma/quicksetting/nightcolor
 %{_libdir}/qt5/qml/org/kde/plasma/quicksetting/nightcolor/libnightcolorplugin.so
 %{_libdir}/qt5/qml/org/kde/plasma/quicksetting/nightcolor/qmldir
-
+%dir %{_libdir}/qt5/qml/org/kde/plasma/quicksetting/flashlight
 %{_libdir}/qt5/qml/org/kde/plasma/quicksetting/flashlight/libflashlightplugin.so
 %{_libdir}/qt5/qml/org/kde/plasma/quicksetting/flashlight/qmldir
+%dir %{_libdir}/qt5/qml/org/kde/plasma/quicksetting/powermenu
 %{_libdir}/qt5/qml/org/kde/plasma/quicksetting/powermenu/libpowermenuplugin.so
 %{_libdir}/qt5/qml/org/kde/plasma/quicksetting/powermenu/qmldir
+%dir %{_libdir}/qt5/qml/org/kde/plasma/quicksetting/screenrotation
 %{_libdir}/qt5/qml/org/kde/plasma/quicksetting/screenrotation/libscreenrotationplugin.so
 %{_libdir}/qt5/qml/org/kde/plasma/quicksetting/screenrotation/qmldir
+%dir %{_libdir}/qt5/qml/org/kde/plasma/quicksetting/screenshot
 %{_libdir}/qt5/qml/org/kde/plasma/quicksetting/screenshot/libscreenshotplugin.so
 %{_libdir}/qt5/qml/org/kde/plasma/quicksetting/screenshot/qmldir
-
 %dir %{_datadir}/kpackage/kcms/kcm_mobileshell
 %dir %{_datadir}/kpackage/kcms/kcm_mobileshell/contents
 %dir %{_datadir}/kpackage/kcms/kcm_mobileshell/contents/ui
@@ -203,6 +208,9 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/metainfo/org.kde.plasma.quicksetting.screenshot.appdata.xml
 %{_datadir}/metainfo/org.kde.plasma.quicksetting.settingsapp.appdata.xml
 %{_datadir}/metainfo/org.kde.plasma.quicksetting.wifi.appdata.xml
+%dir %{_datadir}/plasma/plasmoids/org.kde.phone.homescreen.halcyon
+%dir %{_datadir}/plasma/plasmoids/org.kde.phone.homescreen.halcyon/contents
+%dir %{_datadir}/plasma/plasmoids/org.kde.phone.homescreen.halcyon/contents/ui
 %{_datadir}/plasma/plasmoids/org.kde.phone.homescreen.halcyon/contents/ui/Clock.qml
 %{_datadir}/plasma/plasmoids/org.kde.phone.homescreen.halcyon/contents/ui/FavoritesAppDelegate.qml
 %{_datadir}/plasma/plasmoids/org.kde.phone.homescreen.halcyon/contents/ui/FavoritesGrid.qml
@@ -213,10 +221,16 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/plasma/plasmoids/org.kde.phone.homescreen.halcyon/contents/ui/HomeScreen.qml
 %{_datadir}/plasma/plasmoids/org.kde.phone.homescreen.halcyon/contents/ui/main.qml
 %{_datadir}/plasma/plasmoids/org.kde.phone.homescreen.halcyon/metadata.json
+%dir %{_datadir}/plasma/quicksettings
+%dir %{_datadir}/plasma/quicksettings/org.kde.plasma.quicksetting.donotdisturb
+%dir %{_datadir}/plasma/quicksettings/org.kde.plasma.quicksetting.donotdisturb/contents
+%dir %{_datadir}/plasma/quicksettings/org.kde.plasma.quicksetting.donotdisturb/contents/ui
 %{_datadir}/plasma/quicksettings/org.kde.plasma.quicksetting.donotdisturb/contents/ui/main.qml
 %{_datadir}/plasma/quicksettings/org.kde.plasma.quicksetting.donotdisturb/metadata.json
+%dir %{_datadir}/plasma/quicksettings/org.kde.plasma.quicksetting.record
+%dir %{_datadir}/plasma/quicksettings/org.kde.plasma.quicksetting.record/contents
+%dir %{_datadir}/plasma/quicksettings/org.kde.plasma.quicksetting.record/contents/ui
 %{_datadir}/plasma/quicksettings/org.kde.plasma.quicksetting.record/contents/ui/main.qml
 %{_datadir}/plasma/quicksettings/org.kde.plasma.quicksetting.record/metadata.json
-
 %{_libdir}/qt5/qml/org/kde/plasma/quicksetting/record/librecordplugin.so
 %{_libdir}/qt5/qml/org/kde/plasma/quicksetting/record/qmldir
