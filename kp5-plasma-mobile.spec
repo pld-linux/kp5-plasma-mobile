@@ -9,7 +9,7 @@
 Summary:	plasma-mobile
 Name:		kp5-%{kpname}
 Version:	5.27.5
-Release:	2
+Release:	3
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
@@ -232,5 +232,6 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{_datadir}/plasma/quicksettings/org.kde.plasma.quicksetting.record/contents/ui
 %{_datadir}/plasma/quicksettings/org.kde.plasma.quicksetting.record/contents/ui/main.qml
 %{_datadir}/plasma/quicksettings/org.kde.plasma.quicksetting.record/metadata.json
+%dir %{_libdir}/qt5/qml/org/kde/plasma/quicksetting/record
 %{_libdir}/qt5/qml/org/kde/plasma/quicksetting/record/librecordplugin.so
 %{_libdir}/qt5/qml/org/kde/plasma/quicksetting/record/qmldir
