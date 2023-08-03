@@ -9,7 +9,7 @@
 Summary:	plasma-mobile
 Name:		kp5-%{kpname}
 Version:	5.27.7
-Release:	1
+Release:	2
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
@@ -28,6 +28,7 @@ BuildRequires:	kf5-kio-devel >= 5.82
 BuildRequires:	kf5-knotifications-devel >= 5.82
 BuildRequires:	kf5-kservice-devel >= 5.82
 BuildRequires:	kf5-kwayland-devel >= 5.82
+BuildRequires:	kf5-modemmanager-qt-devel >= 5.82
 BuildRequires:	kf5-plasma-framework-devel >= 5.82
 BuildRequires:	kirigami-addons-devel >= 0.7.0
 BuildRequires:	kp5-kwin-devel >= 5.23.0
