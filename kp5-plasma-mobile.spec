@@ -7,7 +7,8 @@
 %define		kpname		plasma-mobile
 %define		kf5_ver		5.102.0
 
-Summary:	plasma-mobile
+Summary:	Plasma Mobile components
+Summary(pl.UTF-8):	Komponenty Plasma Mobile
 Name:		kp5-%{kpname}
 Version:	5.27.11
 Release:	2
@@ -15,7 +16,7 @@ License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
 # Source0-md5:	5df7642fa42db0acf4dd4c17a508311d
-URL:		https://kde.org/
+URL:		https://plasma-mobile.org/
 BuildRequires:	Qt5Core-devel >= 5.15.0
 BuildRequires:	Qt5Gui-devel >= 5.15.0
 BuildRequires:	Qt5Network-devel >= 5.15.0
