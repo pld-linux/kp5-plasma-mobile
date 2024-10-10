@@ -25,12 +25,12 @@ BuildRequires:	gettext-devel
 BuildRequires:	kf5-extra-cmake-modules >= 5.82
 BuildRequires:	kf5-ki18n-devel >= 5.82
 BuildRequires:	kf5-kio-devel >= 5.82
+BuildRequires:	kf5-kirigami-addons-devel >= 0.7.0
 BuildRequires:	kf5-knotifications-devel >= 5.82
 BuildRequires:	kf5-kservice-devel >= 5.82
 BuildRequires:	kf5-kwayland-devel >= 5.82
 BuildRequires:	kf5-modemmanager-qt-devel >= 5.82
 BuildRequires:	kf5-plasma-framework-devel >= 5.82
-BuildRequires:	kirigami-addons-devel >= 0.7.0
 BuildRequires:	kp5-kwin-devel >= 5.23.0
 BuildRequires:	ninja
 BuildRequires:	pkgconfig
